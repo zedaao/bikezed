@@ -27,10 +27,6 @@
   position: relative;
 }
 
-.depoimento span {
-  text-align: right;
-}
-
 .depoimento p::before {
   content: "“";
   font-size: 5rem;
