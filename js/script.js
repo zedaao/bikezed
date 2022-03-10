@@ -1,3 +1,4 @@
+//Ativar Links do Menu
 const links = document.querySelectorAll(".header-menu a");
 
 function ativarLink(link) {
@@ -12,4 +13,15 @@ function ativarLink(link) {
 
 links.forEach(ativarLink);
 
-link.classList.add("ativo");
+//Ativar Item orçamento
+
+const parametros = new URLSearchParams(location.search);
+
+function ativarProduto(parametro) {
+  const elemento = document.getElementById(parametro);
+  if (parametro) {
+    elemento.checked = true;
+  }
+}
+
+parametros.forEach(ativarProduto);
